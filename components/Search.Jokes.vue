@@ -1,10 +1,10 @@
 <template>
-  <div class="action-bar">
-    <form @submit.prevent="onSubmit">
-      <input type="text" v-model="text" placeholder="Search Jokes...">
-      <input type="submit" value="Search Jokes">
+  <div class="action-bar mb-3">
+    <form class="form-inline" @submit.prevent="onSubmit">
+      <input class="form-control mr-3" type="text" v-model="text" placeholder="Search Jokes...">
+      <input class="btn btn-primary" type="submit" value="Search">
     </form>
-    <button @click="clearSearch" class="clear">Clear</button>
+    <button @click="clearSearch" class="btn btn-secondary clear">Clear</button>
   </div>
 </template>
 
